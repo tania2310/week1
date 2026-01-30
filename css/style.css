@@ -1,0 +1,394 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles (mobile-first) */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  color: #151f36;
+  background-color: #F9FAFB;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #111827;
+}
+
+
+/* Navigation bar */
+nav {
+    background-color: #0d162a;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* ===== HERO SECTION ===== */
+
+.hero {
+  padding: 80px 20px;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-image {
+  flex-shrink: 0;
+}
+
+.profile-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-text {
+  max-width: 500px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.hero-text .subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  color: #555;
+}
+.hero-text h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.hero-text .subtitle {
+  color: #2563EB;
+  font-weight: 500;
+}
+
+.hero-text p {
+  color: #6B7280;
+  font-size: 1.05rem;
+}
+
+
+/* ===== HERO RESPONSIVE ===== */
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+}
+/* ===== SKILLS SECTION ===== */
+
+.skills {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+.section-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.skills h2,
+.goal h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.skill-card {
+  padding: 15px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* ===== CAREER GOAL SECTION ===== */
+
+.goal {
+  padding: 80px 20px;
+}
+
+.goal p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* ===== RESPONSIVE =====*
+/* ===== CTA SECTION ===== */
+
+.cta {
+  background-color: #222;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cta .section-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.cta .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #00bcd4;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.cta .btn:hover {
+  background-color: #0097a7;
+}
+
+
+/* ===== FOOTER ===== */
+
+.footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+
+
+/* ===== PROJECTS SECTION ===== */
+
+.projects {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 15px;
+  font-size: 1.2rem;
+}
+
+.project-card p {
+  margin: 0 15px 15px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.project-card .btn {
+  display: inline-block;
+  margin: 0 15px 20px;
+}
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Contact section */
+.contact {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #2a0909;
+}
+
+.contact textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.contact button {
+  padding: 0.7rem 1.5rem;
+  background-color: #1144bb;   /* same blue as View Project */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #0097a7;   /* slightly darker on hover */
+}
+
+
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links h3 {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    font-size: 28px;
+    margin: 0 15px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #1c81b7; /* LinkedIn blue */
+}
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  background-color: #1144bb;
+  color: #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #6473a3;
+  transform: translateY(-2px);
+}
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+section {
+  padding: 80px 20px;
+}
+/* ===== CTA SECTION ===== */
+
+.cta {
+  background: linear-gradient(135deg, #25c7eb, #1E40AF);
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.cta h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #E5E7EB;
+}
+
+.cta .btn {
+  background-color: #ffffff;
+  color: #2563EB;
+}
+
+.cta .btn:hover {
+  background-color: #E0E7FF;
+}
+/* ===== FOOTER ===== */
+
+.footer {
+  background-color: #0d162a;
+  color: #9CA3AF;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+
